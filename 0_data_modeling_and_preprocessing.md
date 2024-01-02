@@ -54,6 +54,22 @@ Following the cluster configuration, the next crucial step involved uploading th
 
 For a comprehensive understanding of the processes involved in implementing data preprocessing to achieve the data modeling, detailed information can be found in the notebook ["0_Data_Modeling.ipynb"](https://github.com/Prof-MatheusAndrade/Sales-Dataset-Exploration/blob/main/0_Materials/2_Databricks_Notebooks/0_Data_Modeling.ipynb). The input to this notebook is the CSV file with the original dataset, and the outputs include the creation of a database named "company" with a Delta table for the fact table, and other Delta tables for each dimension tables derived from the data model. 
 
+To ensure data quality and integrity, a dedicated notebook, named ["1_Data_Quality.ipynb"](https://github.com/Prof-MatheusAndrade/Sales-Dataset-Exploration/blob/main/0_Materials/2_Databricks_Notebooks/1_Data_Quality.ipynb) was developed. This notebook incorporates various data quality checks, including statistical results such as minimum, maximum, and average values. Additionally, the notebook validates the presence of duplicate values in primary keys and their corresponding subjects. This meticulous data quality assurance process contributes to the reliability of the dataset, instilling confidence in the subsequent analysis and decision-making processes. 
 
+## Relevant results in data preprocessing and quality check
 
-["1_Data_Quality.ipynb"](https://github.com/Prof-MatheusAndrade/Sales-Dataset-Exploration/blob/main/0_Materials/2_Databricks_Notebooks/1_Data_Quality.ipynb)
+In the pursuit of refining the dataset for analysis, thorough data preprocessing and quality checks were conducted. The outcomes of these efforts yielded valuable insights and improvements in data quality. Here are the relevant results identified during the preprocessing and quality checks:
+
+### 1. Data Completeness and Numerical Results
+During the data preprocessing phase, no issues related to missing values were identified. Numerical columns, such as "Shipping Cost" and "Sales," exhibited sound results without negative values or unusual outliers. Categorical columns across all tables demonstrated meaningful subjects, and the date column posed no issues, providing a solid foundation for subsequent analysis.
+
+### 2. Fact Table - Order
+In the fact table "Order," duplicates were identified in the "Order_ID" column. To resolve this, an incremental column was introduced to serve as the primary key for the fact table, and the original "Order_ID" column was renamed to "Order_local_ID." This approach ensures the uniqueness of each record in the fact table.
+
+### 3. Dimension Table - Product
+Within the dimension table "Product," discrepancies were observed in different features (e.g., product name) for the same "Product_ID." To maintain a one-to-many relationship in the snowflake model, the last content based on the last order date was considered during preprocessing. This ensures consistency and relevance in the dimension table.
+
+### 4. Dimension Tables - Product_Category and Customer
+The dimension tables "Product_Category" and "Customer" exhibited duplicates in content but with different primary keys. In these cases, the decision was made to consider only the primary key for identifying "Product_Category" and "Customers." This ensures data integrity and avoids redundancy in the snowflake model.
+
+These identified results underscore the importance of rigorous data preprocessing and quality checks, ensuring the reliability and accuracy of the dataset. The proactive measures taken during this phase contribute to a robust foundation for subsequent analytical tasks, providing stakeholders with confidence in the validity of the derived insights.
