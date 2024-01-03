@@ -1,4 +1,4 @@
-# Objective 1: Top 10 Paper Customers
+# Objective 1 - Top 10 Paper Customers
 In pursuit of achieving Objective 1, the focus was on identifying the top 10 paper customers, ranked by revenue, and determining the number of segments covered by these top customers. 
 
 ## Data Model Configuration in Power BI
