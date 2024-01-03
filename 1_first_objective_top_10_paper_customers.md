@@ -21,4 +21,6 @@ In the left section of the dashboard, a bar graph highlights the top 10 customer
 
 To address the objective, users can easily identify the top 10 customers in the bar graph, ranked by revenue. The number of segments covered by each customer is visually represented, providing valuable insights into the distribution of revenue across different segments. The total revenue by segment is also depicted on the right axis, contributing to a comprehensive understanding of the market dynamics.
 
+In the analysis, it's observed that there are no significant gaps in the top 5 customers, indicating that the company can maintain focus on all the top 10 customers, each contributing positively to the business. Moreover, the presence of only two customers from the Corporate segment in the top 10 suggests the need for a strategic initiative to target more Corporate customers in the paper market. Conversely, the Home Office segment demonstrates good results, emphasizing the need for increased investments to sustain continuous growth.
+
 This dashboard not only fulfills the requirements of Objective 1 but also serves as a powerful tool for stakeholders to gain actionable insights into the top paper customers and their segmentation in the market.
