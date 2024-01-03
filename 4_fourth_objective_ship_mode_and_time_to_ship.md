@@ -27,11 +27,11 @@ To validate these observations, three different types of correlations were calcu
 <img src="https://drive.google.com/uc?export=view&id=1422eEscpMlAZBFemCx93O-MAZlZj3sjj"  width="60%" height="30%">
 </p>
 
-**1. Pearson = 0.817761**: Pearson correlation ranges from -1 to 1. It measures the linear relationship between two continuous variables. In this case, the value is 0.817761, indicating a strong positive linear correlation.
+**1. Pearson = 0.832566**: Pearson correlation ranges from -1 to 1. It measures the linear relationship between two continuous variables. In this case, the value is 0.832566, indicating a strong positive linear correlation.
 
-**2. Spearman = 0.771999**: Spearman correlation is a rank correlation measure, less sensitive to outliers. It assesses the monotonic relationship between variables. The value 0.771999 suggests a strong positive correlation in the ranks of the variables.
+**2. Spearman = 0.794095**: Spearman correlation is a rank correlation measure, less sensitive to outliers. It assesses the monotonic relationship between variables. The value 0.794095 suggests a strong positive correlation in the ranks of the variables.
 
-**3. Kendall = 0.680643**: Kendall correlation is also a rank correlation measure. It evaluates the concordance or discordance in the ranks of variables. The value 0.680643 indicates a moderate positive correlation in the ranks of the variables.
+**3. Kendall = 0.701629**: Kendall correlation is also a rank correlation measure. It evaluates the concordance or discordance in the ranks of variables. The value 0.701629 indicates a moderate positive correlation in the ranks of the variables.
 
 In summary, all coefficients indicate a positive correlation between the variables, but the strength of this correlation varies slightly between methods. The highest value is for Pearson, followed by Spearman and then Kendall. In conclusion, Time to Ship exhibits a strong relationship with Ship Mode, indicating that the Time to Ship is faster for the following Ship Modes, in order:
 
